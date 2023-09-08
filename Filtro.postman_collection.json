@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "aaedae44-716e-456a-af70-96302b284d4f",
+		"name": "Filtro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28465286"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/api/campers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\n        \n            \"nombre\": \"Camila\",\n            \"tipoIdentificacion\": \"C.C\",\n            \"NroIdentificacion\": \"1234567899\",\n            \"email\": \"Camila@gmail.com\",\n            \"password\": \"camila12\",\n            \"level\": \"Node js\",\n            \"levelState\": \"64d379f6902929b15edb4de0\",\n            \"estado\": true,\n            \"imagen\": \"////\",\n            \"rol\": \"ADMIN\",\n            \"promedio\": \"5\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/api/campers/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"mariana4@gmail.com\",\n    \"password\":\"mariana4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/rutas/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/api/rutas/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/levels/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/api/levels/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/api/centros/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/api/centros/"
+			},
+			"response": []
+		}
+	]
+}
